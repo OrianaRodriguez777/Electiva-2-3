@@ -1,0 +1,212 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff6565, #8c28a5, #edb8fa);
+    height: 100vh;
+  }
+  
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+  }
+  
+  .form-container .welcome-screen-container {
+    background-image: url('https://static.zerochan.net/Bungou.Stray.Dogs.full.4068869.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 1rem;
+    height: 100%;
+    width: 50%;
+  }
+
+  .form-container {
+    background-color: #350111;
+    box-shadow: 0 0 5px rgb(155, 63, 114);
+    border: 1px solid #d8a7b5;
+    width: 80%;
+    border-radius: 10px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #fff;
+  }
+  
+  .form-container .login-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-container .login-container > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .form-container .login-container > p,
+  .form-container .login-container span {
+    color: #ffe9e9;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .form-container .login-container label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  
+  .form-container .login-container input.form-input {
+    display: block;
+    box-sizing: border-box;
+    background-color: #fdcae1;
+    padding: 10px;
+    border: solid 1px #870065;
+    width: 100%;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+  .form-container .login-container input.form-input:focus {
+    outline: solid 1px rgb(230, 84, 198);
+  }
+  
+  .form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .form-container .login-container button.btn,
+  .form-container .login-container input.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .form-container .login-container input.btn.btn-login {
+    background-color: rgb(111, 187, 158);
+    color: #fff;
+    border: red 1px solid;
+    border: 15px;
+  }
+  
+  .form-container .login-container input.btn.btn-login:hover {
+    background-color: #741229;
+    transition: 200ms;
+    color: #ff6565;
+  }
+  
+  .form-container .login-container button.btn.google-provider {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: solid 1px #7c0838;
+  }
+  
+  .form-container .login-container button.btn.facebook-provider {
+    background-color: rgb(10, 82, 216);
+    color: white;
+    font-weight: bold;
+    border: 0;
+  }
+  
+  .form-container .login-container button.btn.twitter-provider {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0;
+  }
+  
+  .form-container .login-container button.btn.google-provider:hover {
+    background-color: rgb(206, 53, 112);
+    color: black;
+    transition: 200ms;
+  }
+  
+  .form-container .login-container button.btn.facebook-provider:hover {
+    background-color: rgb(209, 50, 156);
+    color: white;
+    transition: 200ms;
+  }
+  
+  .form-container .login-container button.btn.twitter-provider:hover {
+    background-color: #fff;
+    color: #000000;
+    transition: 200ms;
+  }
+  
+  .form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .link a:hover {
+    color: #f950ff;
+    transition: 200ms;
+    transition-duration: 1s;
+  }
+  
+  .form-container .welcome-screen-container {
+    background-color: rgb(109, 1, 37);
+    border-radius: 1rem;
+    height: 100%;
+    width: 50%;
+  }
+  
+  @media screen and (max-width: 1357px) {
+    .form-container {
+      width: 95%;
+    }
+    .form-container .login-container {
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .form-container .welcome-screen-container {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .form-container .login-container {
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .form-container .welcome-screen-container {
+      width: 0%;
+    }
+  }
